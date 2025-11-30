@@ -7,19 +7,14 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-
-# Virtual environment
 venv/
 env/
 ENV/
 
-# Environment files
-.env
-.env.local
-
 # Git
 .git/
 .gitignore
+.github/
 
 # IDE
 .vscode/
@@ -27,13 +22,14 @@ ENV/
 *.swp
 *.swo
 
-# Documentation
+# Documentation (keep only README)
 *.md
 !README.md
 
 # Tests
 tests/
 *.test.py
+test_*.py
 
 # Logs
 *.log
@@ -42,6 +38,7 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+*.bak
 
 # Temporary files
 *.tmp
@@ -51,3 +48,11 @@ tmp/
 # Examples
 examples/
 
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# CI/CD
+.github/
+.gitlab-ci.yml
